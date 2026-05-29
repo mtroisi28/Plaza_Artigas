@@ -79,53 +79,114 @@ export default function App() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <Shield className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">Seguridad Integral</h3>
-              <p className="text-muted-foreground">
-                Control de acceso con reconocimiento facial, sistema de reconocimiento de matrículas y vigilancia 24 horas
-              </p>
-            </Card>
+            <AmenityCard
+              icon={Dumbbell}
+              title="Gimnasio Equipado"
+              shortDescription="Gimnasio terminado y funcionando con equipamiento completo"
+              fullDescription="Gimnasio moderno de última generación, totalmente equipado y listo para tu entrenamiento diario."
+              features={[
+                "Equipamiento de alta calidad",
+                "Amplio espacio con ventilación natural",
+                "Máquinas cardiovasculares y de fuerza",
+                "Zona de pesas libres",
+                "Acceso exclusivo para residentes"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=1080",
+                "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=800"
+            />
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <Car className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">Cochera Incluida</h3>
-              <p className="text-muted-foreground">
-                Todos los apartamentos incluyen cochera propia. Ingreso y egreso con reconocimiento automático
-              </p>
-            </Card>
+            <AmenityCard
+              icon={UtensilsCrossed}
+              title="Espacios de Reunión"
+              shortDescription="Barbacoas y SUM para tus reuniones y eventos"
+              fullDescription="Espacios diseñados para compartir momentos inolvidables con familia y amigos."
+              features={[
+                "1 barbacoa abierta con vista panorámica",
+                "2 barbacoas cerradas climatizadas",
+                "Sala de usos múltiples (SUM) amplia",
+                "Mesas y asientos para eventos",
+                "Sistema de reserva online"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800"
+            />
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <Dumbbell className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">Gimnasio Equipado</h3>
-              <p className="text-muted-foreground">
-                Gimnasio terminado y funcionando con equipamiento completo para tu entrenamiento
-              </p>
-            </Card>
+            <AmenityCard
+              icon={Car}
+              title="Cochera Incluida"
+              shortDescription="Todos los apartamentos incluyen cochera propia"
+              fullDescription="Estacionamiento techado y seguro incluido en cada apartamento, sin costos adicionales."
+              features={[
+                "Cochera asignada por apartamento",
+                "13 m² de espacio cubierto",
+                "Acceso directo al edificio",
+                "Sistema de seguridad integrado",
+                "Iluminación LED"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1548343361-02248be15911?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1548343361-02248be15911?w=800"
+            />
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <UtensilsCrossed className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">Espacios de Reunión</h3>
-              <p className="text-muted-foreground">
-                Una barbacoa abierta y dos barbacoas cerradas. Sala de usos múltiples (SUM) para eventos
-              </p>
-            </Card>
+            <AmenityCard
+              icon={Shield}
+              title="Seguridad Integral"
+              shortDescription="Video vigilancia y monitoreo 24 horas para tu tranquilidad"
+              fullDescription="Sistema de seguridad de última generación para tu tranquilidad y la de tu familia."
+              features={[
+                "Video vigilancia 24/7",
+                "Monitoreo en tiempo real",
+                "Control de accesos",
+                "Personal de seguridad permanente",
+                "Sistema de alarmas integrado"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800"
+            />
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <Building2 className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">84 Apartamentos</h3>
-              <p className="text-muted-foreground">
-                3 torres modernas con 28 apartamentos cada una. Diferentes orientaciones y tipologías
-              </p>
-            </Card>
+            <AmenityCard
+              icon={Building2}
+              title="84 Apartamentos"
+              shortDescription="3 torres modernas con diferentes tipologías"
+              fullDescription="Complejo residencial diseñado con criterios de arquitectura contemporánea y máximo confort."
+              features={[
+                "3 torres independientes",
+                "28 apartamentos por torre",
+                "1, 2 y 3 dormitorios disponibles",
+                "Diferentes orientaciones (SE, NO, NE, SO)",
+                "Terminaciones de primera calidad"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800"
+            />
 
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <MapPin className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="mb-2">Ubicación Céntrica</h3>
-              <p className="text-muted-foreground">
-                Lavalleja 1265, Durazno. Acceso a todos los servicios y comercios de la ciudad
-              </p>
-            </Card>
+            <AmenityCard
+              icon={MapPin}
+              title="Ubicación Céntrica"
+              shortDescription="Lavalleja 1265, Durazno - En el centro de todo"
+              fullDescription="Ubicación estratégica con acceso inmediato a todos los servicios que necesitás."
+              features={[
+                "Centro de Durazno",
+                "Comercios a pasos",
+                "Transporte público cercano",
+                "Instituciones educativas próximas",
+                "Centros de salud en la zona"
+              ]}
+              images={[
+                "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1080"
+              ]}
+              hoverImage="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800"
+            />
           </div>
         </div>
       </section>
