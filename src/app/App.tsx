@@ -1,4 +1,5 @@
 import { Building2, Shield, Car, Dumbbell, UtensilsCrossed, MapPin, Phone, Mail, PlayCircle, FileText, Download } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { Button } from './components/ui/button';
 import { Card } from './components/ui/card';
 import { Input } from './components/ui/input';
@@ -480,6 +481,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
