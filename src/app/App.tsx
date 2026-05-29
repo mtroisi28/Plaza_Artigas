@@ -63,8 +63,17 @@ export default function App() {
                 <Button variant="outline" size="lg">Consultar Precios</Button>
               </div>
             </div>
-            <div className="bg-muted rounded-lg aspect-video flex items-center justify-center">
-              <p className="text-muted-foreground">Video del Complejo</p>
+            <div className="rounded-lg overflow-hidden aspect-video shadow-lg">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/wVxjjWqAMFI?autoplay=1&mute=1&loop=1&playlist=wVxjjWqAMFI"
+                title="Plaza Artigas - Video del Complejo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
