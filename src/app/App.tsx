@@ -254,10 +254,7 @@ export default function App() {
             </Card>
 
             {/* 2 Dormitorios */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow border-2 border-primary">
-              <div className="bg-primary text-primary-foreground text-xs py-1 px-3 text-center font-medium">
-                Más solicitado
-              </div>
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="aspect-square overflow-hidden bg-muted">
                 <ImageWithFallback
                   src={render2Dorm}
@@ -346,23 +343,23 @@ export default function App() {
           </div>
 
           {/* Benefits Section */}
-          <div className="mt-16 bg-primary/5 rounded-lg p-8">
-            <h3 className="text-center mb-6">Beneficios Fiscales ANV</h3>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div>
-                <div className="text-3xl font-medium mb-2">Torre 1</div>
-                <p className="text-muted-foreground">Exoneración hasta marzo 2032</p>
+          <div className="mt-16 border border-border rounded-lg p-6">
+            <h3 className="text-center mb-4">Beneficios Fiscales ANV</h3>
+            <div className="grid md:grid-cols-3 gap-4 mb-4">
+              <div className="text-center">
+                <div className="text-xl font-medium mb-1">Torre 1</div>
+                <p className="text-sm text-muted-foreground">Exoneración hasta 03/2032</p>
               </div>
-              <div>
-                <div className="text-3xl font-medium mb-2">Torre 3</div>
-                <p className="text-muted-foreground">Exoneración hasta marzo 2034</p>
+              <div className="text-center">
+                <div className="text-xl font-medium mb-1">Torre 2</div>
+                <p className="text-sm text-muted-foreground">Exoneración hasta 09/2035</p>
               </div>
-              <div>
-                <div className="text-3xl font-medium mb-2">Torre 2</div>
-                <p className="text-muted-foreground">Exoneración hasta setiembre 2035</p>
+              <div className="text-center">
+                <div className="text-xl font-medium mb-1">Torre 3</div>
+                <p className="text-sm text-muted-foreground">Exoneración hasta 03/2034</p>
               </div>
             </div>
-            <p className="text-center text-sm text-muted-foreground mt-6">
+            <p className="text-center text-xs text-muted-foreground border-t border-border pt-4">
               Beneficios de IP e IRPF para propietarios que califiquen bajo la Agencia Nacional de Vivienda
             </p>
           </div>
